@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luke Wamalwa · Data Scientist</title>
+  <meta name="description" content="Luke Wamalwa, data scientist in public mental health. Predictive modelling, biostatistics and healthcare analytics in Python, R and SQL.">
+  <meta property="og:title" content="Luke Wamalwa · Data Scientist">
+  <meta property="og:description" content="Predictive modelling, biostatistics and healthcare analytics in Python, R and SQL.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><text x='16' y='22' font-family='Arial' font-size='16' font-weight='700' fill='white' text-anchor='middle'>LW</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="#top">Luke Wamalwa</a>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">Data scientist · public mental health</p>
+      <h1>I build models and analytics that help people get care sooner.</h1>
+      <p class="lead">I work on predictive modelling, biostatistics and healthcare analytics in Python, R and SQL. Across every project I care about getting the statistics right: no data leakage, honest uncertainty, and conclusions the evidence supports.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See projects</a>
+        <!-- CV: add assets/Luke_Wamalwa_CV.pdf, then uncomment: <a class="btn" href="assets/Luke_Wamalwa_CV.pdf" download>Download CV</a> -->
+        <a class="btn" href="https://github.com/lukahere007">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/luke-wamalwa-839624292/">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap section">
+      <h2>Featured projects</h2>
+      <p class="section-lead">Each project is public, reproducible and tested. Every number below comes from the code in its repository.</p>
+      <div class="grid">
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/clinical-trial-survival-analysis"><img src="assets/img/survival-km.png" alt="Kaplan–Meier survival curves by treatment arm" loading="lazy"></a>
+          <div class="card-body">
+            <h3>Clinical trial survival analysis</h3>
+            <p class="result">Chemotherapy cut the risk of death by 31% (HR 0.69, 95% CI 0.55–0.87).</p>
+            <p>Reanalysis of a 929-patient randomised colon cancer trial, driven by a pre-written statistical analysis plan: Kaplan–Meier, Cox models, proportional-hazards checks and restricted mean survival time.</p>
+            <ul class="tags"><li>R</li><li>survival</li><li>biostatistics</li></ul>
+            <a class="more" href="https://github.com/lukahere007/clinical-trial-survival-analysis">View code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/readmission-risk-api"><img src="assets/img/readmission-calibration.png" alt="Calibration curve of the readmission model" loading="lazy"></a>
+          <div class="card-body">
+            <h3>Hospital readmission risk API</h3>
+            <p class="result">Flagging the riskiest 10% of discharges finds 25% of 30-day readmissions.</p>
+            <p>A readmission model evaluated on unseen patients, served as a FastAPI web service in Docker, with calibration and subgroup checks, drift monitoring and a model card.</p>
+            <ul class="tags"><li>Python</li><li>scikit-learn</li><li>FastAPI</li><li>Docker</li></ul>
+            <a class="more" href="https://github.com/lukahere007/readmission-risk-api">View code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/healthcare-sql-analytics"><img src="assets/img/sql-readmission.png" alt="30-day readmissions by reason" loading="lazy"></a>
+          <div class="card-body">
+            <h3>Healthcare SQL analytics</h3>
+            <p class="result">Ten clinical questions answered in tested, layered SQL.</p>
+            <p>Readmissions, length of stay, cost drivers, polypharmacy and care gaps on synthetic health records for 2,337 patients, using window functions, CTEs and gaps-and-islands logic.</p>
+            <ul class="tags"><li>SQL</li><li>DuckDB</li><li>Python</li></ul>
+            <a class="more" href="https://github.com/lukahere007/healthcare-sql-analytics">View code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/missing-data-imputation-analysis"><img src="assets/img/missing-data.png" alt="Bias and confidence-interval coverage by imputation method" loading="lazy"></a>
+          <div class="card-body">
+            <h3>Missing data: which fix works?</h3>
+            <p class="result">Only multiple imputation kept 95% intervals honest; regression imputation covered the truth about half the time.</p>
+            <p>A 500-repetition Monte Carlo study comparing four ways of handling missing values under MCAR, MAR and MNAR.</p>
+            <ul class="tags"><li>Python</li><li>statsmodels</li><li>simulation</li></ul>
+            <a class="more" href="https://github.com/lukahere007/missing-data-imputation-analysis">View code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/creditcard-fraud-analysis"><img src="assets/img/fraud-threshold.png" alt="Net savings by alert threshold" loading="lazy"></a>
+          <div class="card-body">
+            <h3>Credit card fraud detection</h3>
+            <p class="result">A cost-based threshold caught 15 of 21 frauds, against 7 at the default.</p>
+            <p>Imbalanced classification with 0.15% fraud: leak-free cross-validation, PR-AUC instead of accuracy, and an alert threshold chosen by money saved.</p>
+            <ul class="tags"><li>Python</li><li>scikit-learn</li><li>SHAP</li></ul>
+            <a class="more" href="https://github.com/lukahere007/creditcard-fraud-analysis">View code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/biotech-fda-event-study"><img src="assets/img/fda-caar.png" alt="Average abnormal returns around FDA approvals by company size" loading="lazy"></a>
+          <div class="card-body">
+            <h3>FDA approvals and stock prices</h3>
+            <p class="result">Small biotechs rose 8.5% on approval; large pharma barely moved.</p>
+            <p>An event study of 234 FDA novel drug approvals (2015–2024) with a market model, robust test statistics and full accounting of every excluded event.</p>
+            <ul class="tags"><li>Python</li><li>pandas</li><li>econometrics</li></ul>
+            <a class="more" href="https://github.com/lukahere007/biotech-fda-event-study">View code →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="subhead">More on GitHub</h3>
+      <ul class="more-list">
+        <li><a href="https://github.com/lukahere007/ml-model-ab-test-framework">A/B testing framework for ML models</a> · sample size, effect sizes, peeking simulation (Python)</li>
+        <li><a href="https://github.com/lukahere007/phishing-detection">Phishing email detection</a> · 525k emails, validation-tuned thresholds (R)</li>
+        <li><a href="https://github.com/lukahere007/redlining-regression-r">Insurance redlining regression</a> · multiple regression and diagnostics (R)</li>
+        <li><a href="https://github.com/lukahere007/Vaccine-Simulation-Python">Vaccine response simulation</a> · mixed models checked against known truth (Python, R)</li>
+        <li><a href="https://github.com/lukahere007/Wine_Shiny_app">Wine quality Shiny app</a> · ordinal regression in an interactive app (R)</li>
+        <li><a href="https://github.com/lukahere007">All repositories →</a></li>
+      </ul>
+    </section>
+
+    <section id="skills" class="wrap section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>Statistics</h3><p>Regression and GLMs, survival analysis, mixed models, causal and event-study designs, missing-data methods, power analysis, simulation</p></div>
+        <div><h3>Machine learning</h3><p>Classification for rare events, cross-validation without leakage, calibration, threshold selection, model monitoring</p></div>
+        <div><h3>Tools</h3><p>Python (pandas, scikit-learn, statsmodels, FastAPI) · R (tidyverse, survival, Shiny, R Markdown) · SQL · Docker · Git and GitHub Actions</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Open to conversations about data science in public health, behavioural health and healthcare.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:lukewamalwa@yahoo.com">Email me</a>
+        <!-- CV: add assets/Luke_Wamalwa_CV.pdf, then uncomment: <a class="btn" href="assets/Luke_Wamalwa_CV.pdf" download>Download CV</a> -->
+        <a class="btn" href="https://www.linkedin.com/in/luke-wamalwa-839624292/">LinkedIn</a>
+        <a class="btn" href="https://github.com/lukahere007">GitHub</a>
+      </div>
+      <p class="small">© 2026 Luke Wamalwa</p>
+    </div>
+  </footer>
+</body>
+</html>
