@@ -20,6 +20,7 @@
       <a class="brand" href="#top">Luke Wamalwa</a>
       <ul>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#sports">Sports</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -123,10 +124,60 @@
       </ul>
     </section>
 
+    <section id="sports" class="wrap section">
+      <h2>Sports analytics</h2>
+      <p class="section-lead">Four projects where the method is the point: each is tested out of sample and compared against a strong baseline.</p>
+      <div class="grid">
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/nfl-fourth-down-bot"><img src="assets/img/nfl-fourth-down.png" alt="Best 4th-down decision by distance and field position" loading="lazy"></a>
+          <div class="card-body">
+            <h3>NFL 4th-down decision bot</h3>
+            <p class="result">When the bot clearly said "go for it", coaches did only 31.6% of the time, costing about 0.63 wins per team-season.</p>
+            <p>A monotone gradient-boosting win-probability model, shape-constrained outcome models and bootstrap confidence for every 4th down from 2014 to 2025.</p>
+            <ul class="tags"><li>Python</li><li>XGBoost</li><li>decision analysis</li></ul>
+            <a class="more" href="https://github.com/lukahere007/nfl-fourth-down-bot">View code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/nfl-game-forecasting"><img src="assets/img/nfl-ratings.png" alt="NFL team rating trajectories with uncertainty bands" loading="lazy"></a>
+          <div class="card-body">
+            <h3>NFL game forecasting with a Kalman filter</h3>
+            <p class="result">Beats Elo, but the Vegas closing line still wins (log loss 0.632 vs 0.612 on 3,018 games).</p>
+            <p>Team strengths drift week to week in a state-space model fitted by maximum predictive likelihood, with quarterback-change and rest effects, tested strictly walk-forward.</p>
+            <ul class="tags"><li>Python</li><li>state-space models</li><li>forecasting</li></ul>
+            <a class="more" href="https://github.com/lukahere007/nfl-game-forecasting">View code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/soccer-xg-xt"><img src="assets/img/soccer-xt.png" alt="Expected threat surface across the pitch" loading="lazy"></a>
+          <div class="card-body">
+            <h3>Soccer: which shots and passes create goals?</h3>
+            <p class="result">Two defenders in the shooting lane cut a penalty-spot chance from 0.24 to 0.14 xG; finishing "skill" is mostly luck.</p>
+            <p>Geometric expected goals from player-position freeze frames, expected threat solved as a Markov chain, and empirical-Bayes shrinkage, on StatsBomb open data.</p>
+            <ul class="tags"><li>Python</li><li>geometry</li><li>Bayesian</li></ul>
+            <a class="more" href="https://github.com/lukahere007/soccer-xg-xt">View code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="https://github.com/lukahere007/tennis-elo-simulator"><img src="assets/img/tennis-slam.png" alt="Pre-tournament Grand Slam title probabilities" loading="lazy"></a>
+          <div class="card-body">
+            <h3>Tennis: surface Elo and Grand Slam simulation</h3>
+            <p class="result">The eventual champion was among the model's top 3 favourites at 40 of 44 Grand Slams (2015–2026).</p>
+            <p>Surface-blended Elo tuned on past seasons, best-of-five maths from set probabilities, and 20,000 simulations of each rebuilt draw.</p>
+            <ul class="tags"><li>Python</li><li>Elo</li><li>Monte Carlo</li></ul>
+            <a class="more" href="https://github.com/lukahere007/tennis-elo-simulator">View code →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="skills" class="wrap section">
       <h2>Skills</h2>
       <div class="skills">
-        <div><h3>Statistics</h3><p>Regression and GLMs, survival analysis, mixed models, causal and event-study designs, missing-data methods, power analysis, simulation</p></div>
+        <div><h3>Statistics</h3><p>Regression and GLMs, survival analysis, mixed models, state-space models and Kalman filtering, event-study designs, missing-data methods, power analysis, simulation</p></div>
         <div><h3>Machine learning</h3><p>Classification for rare events, cross-validation without leakage, calibration, threshold selection, model monitoring</p></div>
         <div><h3>Tools</h3><p>Python (pandas, scikit-learn, statsmodels, FastAPI) · R (tidyverse, survival, Shiny, R Markdown) · SQL · Docker · Git and GitHub Actions</p></div>
       </div>
